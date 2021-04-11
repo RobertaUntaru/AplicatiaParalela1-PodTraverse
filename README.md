@@ -1,0 +1,1 @@
+# AplicatiaParalela1-PodTraverse
