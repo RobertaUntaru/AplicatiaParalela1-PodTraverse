@@ -16,13 +16,13 @@ public class PCMonitor {
 	      return contents; 
 	   }
 	   
-	   public synchronized void put(int vaccine) {	
+	   public synchronized void put(int beam) {	
 	      while (available == true) {	
 	         try {
 	            wait(); 
 	         } catch (InterruptedException e) { } 
 	      }
-	      contents = vaccine;
+	      contents = beam;
 	      available = true;
 	      notifyAll(); 
 	   }
