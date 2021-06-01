@@ -12,7 +12,6 @@ public class Beam extends Thread{
     }
     
     public void run() { 
-     System.out.println("Beam no:[" + BeamNumber +"] successfully created.");
      BeamNumber++;
      monitor.put(BeamNumber); 
     }
